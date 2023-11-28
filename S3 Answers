@@ -1,0 +1,80 @@
+1. Difference between Block storage & Object Storage ?
+Ans 
+   1. Block storage:
+      Data is divided into equally sized blocks these are fixed size blocks.
+      Each block has a unique identifier.
+      When data needs to be retrieved the data lookup table is used to find the required blocks.
+      In block storage we can store os but in object storage we cant.
+      Distributed across SSD and HDD.
+    2.  Object storage:
+      Data is stored in objects in bucket.
+      We can store documents, images, files or data also this files metadata is stored.
+      The metadata can include attributes like the unique identifier, object name, size, file creation data.
+      Object storage is used in S3 service.
+
+Difference between static website & dynamic website ?
+Ans: a) Static website:  
+In static website, web pages are returned by the server which are prebuild source code files built using simple languages such as HTML, CSS or Javascript.
+It is stable therefore static websites are fast.
+In static website no interaction with database.
+  
+          b) Dynamic website:
+In dynamic website, web pages are not prebuild, pages are built during runtime according to the users demand with the help of server-side scripting languages such as PHP, Node.js,ASP, .net.
+Content of webpages can be changed.
+Here database is present,
+It is slower than static website
+Cost is more.
+          
+What are the naming rules ?
+Ans:
+Bucket names can only contain lowercase letters, numeric characters, dashes ( - ), underscores ( _ ), and dots ( . ). ...
+Bucket names must start and end with a number or letter.
+Bucket names cannot be represented as an IP address in dotted-decimal notation (for example, 192.168.5.4).
+Every bucket name must be globally unique.
+The following are examples of valid bucket names:
+my-travel-maps
+0f75d593-8e7b-4418-a5ba-cb2970f0b91e
+test.example.com 
+
+What is the major resource of S3 Bucket ?
+Ans: 
+
+
+Why do we need to host static websites instead of dynamic websites ?
+What is versioning & Why do we need versioning ?
+What are the objects and types of objects that we are uploading into the S3 Bucket ?
+Why is MFA Delete important in S3 Bucket object level ?
+What is S3 Multipart upload ?
+What are the storage classes in Amazon S3 ?   —------------------- IMP
+What is ACL ?
+Why do we need ACL ?
+What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+How can we make our bucket public ?
+How can we give public access to our bucket ?
+Aws pricing factor of the S3 Service.
+How can we make our object public ?
+How can we configure the static website logs in s3 ?
+
+What is CORS ?
+CORS stands for cross-origin resource sharing.
+It is the one of resource of s3.
+
+
+
+
+What is S3 Inventory ?
+Ans: Path = S3 → bucket → Management → Inventory rule
+Using s3 inventory you can pull the report.
+You can configure multiple inventory lists for a bucket
+You can create an inventory for collecting the metadata of your nodes.
+
+
+
+
+
+
+What does it mean by Requester pays ?
+ANS:  generally bucket owner pays for storage of data in s3, but if requester is requesting access for the data, then he needs to pay instead of bucket owner.
+
+What is the secondary word to Transfer acceleration ?, why we need to use this transfer acceleration ?
+
