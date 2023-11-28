@@ -1,1 +1,57 @@
+1. What is cloud computing ?
+Ans: Cloud computing is delivery of various services data storage, servers, databases, softwares and networking using internet. Instead of buying, owning and maintaning physical data 
+     centers and servers you can access various kind of services via internet.
+
+2. Deployment Model in Cloud ?
+Ans: four types:
+    1. public cloud
+    2. private cloud
+    3. Hybrid cloud
+    4. community cloud
+
+3. Service Model in Cloud ?
+Ans: 1. Infrastructure as a service (IAAS)
+     2. Platform as a service(PAAS)
+     3. Software as a service(SAAS)
+    
+4. Architecture of Cloud Computing ?
+Ans:
+5. AWS Global Infrastructure Count ?
+Ans: > Regions - 32
+     > Availability zone - 102
+     > point of present - 550+
+     > edge caches - 13 
+
+5. Why do we use region ?
+Ans: we are using regions because of scalabilty and reliability also cost effect matters.
+
+6. What is service ? & What are resources ?
+Ans: 1. service -> Basically EC2, IAM, S3, VPC, EFS This are services
+     2. Resources are comes under services like create user, create role, create bucket 
+
+7. How many resources do we have in IAM ?
+Ans:1. User
+    2. user groups
+    3. roles
+    4. policies
+    
+8. Deployment model in IAM ?
+9. Identities in IAM ?
+Ans:  IAM user, IAM Group, IAM role
+
+10. What is an IAM User ?
+Ans: IAM is a user that we create in aws and he is accessing different aws services.
+
+11. What is the IAM Group ?
+Ans:
+What is the IAM Policy ?
+What is the IAM Role ?
+Where do we attach Identity Based Policy ?
+Where do we attach Resource Based Policy ?
+Can we be able to create Policy via json code ?
+If one user has created it by default, which permission has been assigned to that user ?
+What is dominator policy ?
+What is ARN ? What are the fields in ARN ?
+How many types of ARN Partition ?
+What are Tags ?
 
