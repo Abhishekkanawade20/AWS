@@ -1,0 +1,39 @@
+1. What is SNS ?
+Ans: SNS stands for simple notification service.  
+    > Amazon sns is a managed service that provides message delivery from publisher to subscriber.
+    > Clients can subscribe to the SNS topic and receive published messages using a supported endpoint type.
+    > Supported endpoints are sms, email, mobile push notifications, Aws lambda, aws sqs.
+
+2. Why do we use SNS ?
+Ans: we use sns service for notification purposes. Suppose we have created one serverless website and we want notification for that on our mail or sms
+     so simply we can use sns service, we will create one topic and we will configure it with a bucket. So I will get notification.
+
+3. What is an Amazon SNS function, and how we can configure it.
+Ans: How to configure
+    1. Go to sns service & select topic tab, select create topic
+    2. Select type as standard, give topic name. Topic is created.
+    3. Now open subscription and create subscription
+    4. Under protocol select sms, email, https or sqs and create a subscription.
+    5. Now subscription created after that you can publish a message which you want to display.
+    6. Now we can configure this topic with any other service and you will get notifications over mail or sms.
+
+4. Difference between Amazon SNS & Amazon SQS.[Hold]
+5. What are the different delivery formats and transports in AWS SNS ?
+Ans: HTTP, HTTPS, SMS ,SQS
+
+6. What is the difference between SNS FIFO & Standard while creating the SNS topic.
+7. On which services are configured with the AWS SNS ?
+Ans: Below services we can configure with Aws SNS 
+  1. S3 Bucket
+  2. For serverless application
+
+8. What is 10DLC in AWS ?
+Ans: 10DLC is stand for 10 digit long code.
+
+9. What are FIFO topics on SNS ?
+Ans: By using FIFO topics, we can do message ordering.
+
+10. What is SNS Mobile Push ?
+Ans: with amazon sns, you have the ability to send push notification messages to your mobile device.
+
+11. On which delivery method do we use and configure the subscription ?
