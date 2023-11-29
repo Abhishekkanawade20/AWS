@@ -28,7 +28,7 @@ Ans: Below services we can configure with Aws SNS
   2. For serverless application
 
 8. What is 10DLC in AWS ?
-Ans: 10DLC is stand for 10 digit long code.
+Ans: 10DLC is stand for 10 digit long code. 10DLC is 10 
 
 9. What are FIFO topics on SNS ?
 Ans: By using FIFO topics, we can do message ordering.
