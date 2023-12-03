@@ -28,7 +28,7 @@ Ans:
           
 3. What are the naming rules ?
 Ans:
-   Bucket names can only contain lowercase letters, numeric characters, dashes ( - ), underscores ( _ ), and dots ( . ). ...
+   1Bucket names can only contain lowercase letters, numeric characters, dashes ( - ), underscores ( _ ), and dots ( . ). ...
    Bucket names must start and end with a number or letter.
    Bucket names cannot be represented as an IP address in dotted-decimal notation (for example, 192.168.5.4).
    Every bucket name must be globally unique.
