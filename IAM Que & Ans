@@ -15,7 +15,10 @@ Ans: 1. Infrastructure as a service (IAAS)
      3. Software as a service(SAAS)
     
 4. Architecture of Cloud Computing ?
-Ans:
+Ans: Frontend - webpage where user is using various services like servers, storage, cloudwatch and many more.
+     backend - physical database, physical connections, hardware, firewall
+     Internet - for accessing we required internet.
+
 5. AWS Global Infrastructure Count ?
 Ans: > Regions - 32
      > Availability zone - 102
@@ -30,28 +33,60 @@ Ans: 1. service -> Basically EC2, IAM, S3, VPC, EFS This are services
      2. Resources are comes under services like create user, create role, create bucket 
 
 7. How many resources do we have in IAM ?
-Ans:1. User
-    2. user groups
-    3. roles
-    4. policies
+Ans: 1. User
+     2. user groups
+     3. roles
+     4. policies
     
 8. Deployment model in IAM ?
+Ans: Three deployement models in IAM:
+    1. On-premises
+    2. cloud
+    3. Hybrid
+
 9. Identities in IAM ?
-Ans:  IAM user, IAM Group, IAM role
+Ans: IAM user, IAM Group, IAM role
 
 10. What is an IAM User ?
 Ans: IAM is a user that we create in aws and he is accessing different aws services.
 
 11. What is the IAM Group ?
-Ans:
-What is the IAM Policy ?
-What is the IAM Role ?
-Where do we attach Identity Based Policy ?
-Where do we attach Resource Based Policy ?
-Can we be able to create Policy via json code ?
-If one user has created it by default, which permission has been assigned to that user ?
-What is dominator policy ?
-What is ARN ? What are the fields in ARN ?
-How many types of ARN Partition ?
-What are Tags ?
+Ans: IAM is a collection of IAM users. IAM group is used for specify permissions for multiple IAM users at a time.
 
+12. What is the IAM Policy ?
+Ans: > IAM policies basically permissions we are giving to the user for accessing any service.
+     > we are attaching policy to user.
+
+13. What is the IAM Role ?
+Ans: 1. we can create an IAM role and in that specifing permission for accessing any service.
+     2. we are attaching this role to services like EC2, S3.
+
+14. Where do we attach Identity Based Policy ?
+Ans: Identity based policy we are attach to an IAM user, group or role. This are basically permissions.
+
+15. Where do we attach Resource Based Policy ?
+Ans: Resource based policy are attach to resource.
+     we can attach resource based policy to an amazon S3 buckets.
+
+16. Can we be able to create Policy via json code ?
+Ans: Yes, we can create via json code.
+
+17. If one user has created it by default, which permission has been assigned to that user ?
+Ans: If user has created by deault then user dont have any kind of permission also user does not have credential.
+
+18. What is dominator policy ?
+Ans: Dominator Policies IAM user have Admin Access (full access, all permission )
+
+19. What is ARN ? What are the fields in ARN ?
+Ans: 1. ARN stands for amazon resource name. It is an unique identify number for aws resource.
+     2. For creating policies we required ARN number for identity purpose.
+     3. arn:<partition>:<service_name>:region:account_id:resource-id/name
+
+20. How many types of ARN Partition ?
+Ans: Three types:
+     1. aws - Aws region, common use
+     2. aws-cn - china region(only for china)
+     3. aws-us-gov - U.S gov cloud region only.
+
+21. What are Tags ?
+Ans: Tags are used for identity purpose.
