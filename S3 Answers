@@ -34,14 +34,28 @@ Ans:
    Every bucket name must be globally unique.
    
 4. What is the major resource of S3 Bucket ?
-Ans:  
-
+Ans: Buckets,BucketLifecycle,Bucket ACL,BucketCors,BucketNotification,BucketLifecycleConfiguration.
 
 5.Why do we need to host static websites instead of dynamic websites ?
+Ans: We need to host static websites bacause this is easy to create and easy to publish also no need to configure database. No need additional service
+
 6.What is versioning & Why do we need versioning ?
-7.What are the objects and types of objects that we are uploading into the S3 Bucket ?
-8.Why is MFA Delete important in S3 Bucket object level ?
+Ans: 1. versioning creates multiple versions of an object in one bucket.
+     2. support one development code and we need to update that code regurely so using versioning we can update code and versioning create multiple version of that file. And suppose
+        in future we want revert changes then that also we can do it using verioning concept.
+
+7. What are the objects and types of objects that we are uploading into the S3 Bucket ?
+Ans: 1. Objects are we are uploading in S3 bucket it may be doc, images, codes.
+     2. You can upload single object upto 160 Gb in size.
+     3. Also maximum size if S3 bucket about 5TB.
+
+8. Why is MFA Delete important in S3 Bucket object level ?
+Ans: MFA delete can help prevent accidental bucket deletion. MFA code adding an extra layer of security
+
 9.What is S3 Multipart upload ?
+Ans: 1. Multipart upload allows you to upload a single object as a set of parts.
+     2. After all parts your objects uploaded, amazon S3 then  presents the data as a single object.
+
 10.What are the storage classes in Amazon S3 ?   —------------------- IMP
 Ans:
     1. Amazon S3 Standard(30 days): > It is used for general purpose. Here data is frequnetly accessed.
