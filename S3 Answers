@@ -51,37 +51,49 @@ Ans:
     3. Amazon S3 Standard-Infrequent Access(60 Days): > To access less frequently user data, user used standard Infrequent Access.
                                                       > Also it provide rapid access when it required.
                                                       > S3 IA moves objects that have not been accessed in 30 consecutive Days.
-    4. Amazon S3 One Zone-Infrequent Access(60 Days): >
-Amazon S3 Glacier Instant Retrieval
-Amazon S3 Glacier Flexible Retrieval
-Amazon S3 Glacier Deep Archive
+    
+    4. Amazon S3 One Zone-Infrequent Access: > In this data is stored in one zone(single AZ), thats why cost is less.
+                                             > It it good choice for storing secondary backup.
 
-11.What is ACL ?
+    5. Amazon S3 Glacier(90 Days): > It is lowest cost storage for long lived data which accessed in few times per year.
+                                   > objects are moving that have been not accessed in 90 consecutive Days.
+
+    6. Amazon S3 Glacier Deep Archive(180 Days): > Used for store data long period.
+                                                 > Restored data within 10 hours.
+                                                 > It is cheapest storage class.
+
+11. What is ACL ?
+Ans: ACL stands for access control list. It is used for manage access to buckets and objects.
+
 12.Why do we need ACL ?
+Ans: 1. Each bucket and objects has ACL attached to it as a subresource.
+     2. When we enable the ACL, then we can change the owenership og object, we can make them public.
+     3. ACL defines that which aws account can or groups are granted access and the type of access.
+     4. When a requset is received against a resource, amazon s3 checks the corresponding ACL to verify that the requester has the necessary access permission.
+
 13.What is a Life cycle policy ? Why do we need to use the life cycle rule ?
+Ans: 1. lifecycle policy consists of one or more rules that determines which images in a repository should be expired.
+     2. lifecycle rule used to manage your objects, so that they are stored cost effectively throughout their lifecycle.
+
 14.How can we make our bucket public ?
+Ans: S3 -> Bucket -> permission -> Block public access-> enable
+
 15.How can we give public access to our bucket ?
 16.Aws pricing factor of the S3 Service.
 17.How can we make our object public ?
 19.How can we configure the static website logs in s3 ?
 
 20.What is CORS ?
-  CORS stands for cross-origin resource sharing.It is the one of resource of s3.
+Ans: CORS stands for cross-origin resource sharing.It is the one of resource of s3.
 
 21.What is S3 Inventory ?
-Ans: Path = S3 → bucket → Management → Inventory rule
-   Using s3 inventory you can pull the report.
-   You can configure multiple inventory lists for a bucket
-   You can create an inventory for collecting the metadata of your nodes.
-
-
-
-
-
+Ans: 1. Path = S3 → bucket → Management → Inventory rule
+     2. Using s3 inventory you can pull the report.
+     3. You can configure multiple inventory lists for a bucket
+     4. You can create an inventory for collecting the metadata of your nodes.
 
 22.What does it mean by Requester pays ?
-ANS: 
-    generally bucket owner pays for storage of data in s3, but if requester is requesting access for the data, then he needs to pay instead of bucket owner.
+ANS: Generally bucket owner pays for storage of data in s3, but if requester is requesting access for the data, then he needs to pay instead of bucket owner.
 
 23.What is the secondary word to Transfer acceleration ?, why we need to use this transfer acceleration ?
 
