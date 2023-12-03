@@ -97,7 +97,7 @@ Ans: Amazon EC2 provides the following purchasing options to enable you to optim
        7. Capacity Reservations – Reserve capacity for your EC2 instances in a specific Availability Zone for any duration.
 
 17. Difference between AWS AMI Image & AWS Template ?
-Ans: AWS Image:
+Ans: AWS AMI Image:
      1. we are creating AMI images from instance. In this software is copied.
      2. AMI images are used to creating instance, we just need to select storage.
      3. This is used in organization where we need to create same cofiguration server daily.
@@ -180,12 +180,33 @@ Ans: Health checks are a way of asking a service on a particular server whether 
 
 34. What is the threshold ?
 35. What is the group of LB ?
+Ans: 
 36. Why do we prefer ALB over ALB ?
 37. Difference between Web server & Application server ?
+Ans:                web-server                                             Application server
+        1. Web servers deliver responses to simple requests.        1. An application server delivers more complex content from databases, 
+                                                                       services, and enterprise systems.
+        2. Web servers primarily use HTTP.                          2. Application servers support many protocols. 
+           They also support FTP and SMTP.
+        3. Web servers deliver static content, like HTML pages,     3. Application servers deliver dynamic content, like real-time 
+           images, videos, and files.                                  updatespersonalized information, and  customer support.
+
 38. What is the target group ?
 39. What is the desired capacity in ASG ?
 40. How many types of the Scaling option ?
 41. Scaling plans ?
 42. Types Auto scaling
 43. Difference between vertical scaling and horizontal scaling ?
+Ans: a) Vertical auto scaling(used in testing):
+        Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing ec2 machine.
+     b) Horizontal autoscaling(used in production):
+        Horizontal scaling means that you scale by adding more ec2 machines into your pool of resources.(replica is creating of server).
+
 44. Difference between AMI & Snapshot ?
+Ans: a) AWS AMI Image:
+     1. we are creating AMI images from instance. In this software is copied.
+     2. AMI images are used to creating instance, we just need to select storage.
+     3. This is used in organization where we need to create same cofiguration server daily.
+
+      b) Snapshot: we are using snapshot for backup purpose, we can take snapshot of server or we can schedule task for snapshot.
+                  
