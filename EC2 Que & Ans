@@ -1,53 +1,47 @@
 
   1. What is EC2, Why do we need EC2 service in cloud computing ?
-Ans: 
-    EC2 is an elastic cloud computing service, using this service we can create servers. It provides resizable compute capacity in the cloud.
+Ans: EC2 is an elastic cloud computing service, using this service we can create servers. It provides resizable compute capacity in the cloud.
 
 2. Features of Amazon EC2 ?
-Ans:
-> Optimal storage
-> Highly available infrastructure
-> Can create a server within a min
-> We can use different AMI images as per our requirement.
+Ans: 1. Optimal storage
+     2. Highly available infrastructure
+     3. Can create a server within a min
+     4. We can use different AMI images as per our requirement.
 
 3. What is Hypervisor ? and its types ?
-Ans:
-> By using hypervisor we can create a machine on host machine like we are creating linux on windows using virtual box.
-> Two types:      Type 1 → type 1 hypervisor also known as bare-metal hypervisor.
-                                     Hardware → hypervisor → guest os
-                  Type 2 → It is known as hosted hypervisor.
-                                     Hardware → host os → hypervisor → guest os
+Ans: By using hypervisor we can create a machine on host machine like we are creating linux on windows using virtual box.
+     Two types:
+     1. Type1 : a) type 1 hypervisor also known as bare-metal hypervisor.
+                b) Hardware → hypervisor → guest os
+
+     2. Type 2 : a) It is known as hosted hypervisor.
+                 b) Hardware → host os → hypervisor → guest os
+
 4. Where we use hypervisor
-Ans: 
-we are using hypervisor to creating different virtual machines on a single physical machine.
+Ans: we are using hypervisor to creating different virtual machines on a single physical machine.
 
 5. Steps to create an EC2 instance.
-Ans: 
-EC2 → launch instance → select AMI image → upload key → select vpc → create instance
+Ans: EC2 → launch instance → select AMI image → upload key → select vpc → create instance
 
 6. EC2 Instance state ?
-Ans:
-> Pending
-> Running
-> Stopping
-> Stopped
-> Shutting-down
-> Terminated
+Ans: 1. Pending
+     2. Running
+     3. Stopping
+     4. Stopped
+     5. Shutting-down
+     6. Terminated
 
 
 7. How many types of EC2 Instance-State codes ?
-Ans: 
-0 : pending. 16 : running. 32 : shutting-down.
+Ans: 0:pending ; 16:running ; 32:shutting-down.
 
 8. What is the meaning of server hibernating mode ?
-Ans:
-> when we hibernate instance, hibernation saves the content from the instance memory(RAM) to elastic block storage root volume, your work also stored. 
-  And when we start our instance stored content will restored. RAM content reload, the processes that are previously running that will also resumes.
+Ans: when we hibernate instance, hibernation saves the content from the instance memory(RAM) to elastic block storage root volume, your work also stored. 
+     And when we start our instance stored content will restored. RAM content reload, the processes that are previously running that will also resumes.
 
 9. What is KMS ?
-Ans:
-> AWS Key Management Service (AWS KMS) is a managed service that makes it easy  
-  for you to create and control the cryptographic keys that are used to protect your data.
+Ans: AWS Key Management Service (AWS KMS) is a managed service that makes it easy  
+     for you to create and control the cryptographic keys that are used to protect your data.
 
 10. AWS Amazon EC2 Instance types ?
 Ans:
@@ -68,36 +62,31 @@ Ans:
 
 
 11. How many types of status checks happen in aws ?
-Ans:   
-     > 0/2 → hardware issue
-     >  ½  → software issue
-     >  2/2   → all good
+Ans: 1. 0/2 → hardware issue
+     2. 1/2 → software issue
+     3. 2/2 → all good
 
 
 12. When we see the global view option in ec2 service ?
 Ans: 
 
 13. When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?
-Ans:
-Due following reasons:
-> It is an first region of aws
-> High AZ’s
-> First update N.virginia zone
-> Aws establish in N.virginia
+Ans: Due following reasons:
+    1. It is an first region of aws
+    2. High AZ’s
+    3. First update N.virginia zone
+    4. Aws establish in N.virginia
 
 
 14. What are EBS Volumes and its types ?
-Ans:
-Amazon EBS allows you to create storage volumes and we can attached it to them EC2 instance. Suppose we required extra storage at that time we can create storage
-volume and we can attach.
+Ans: Amazon EBS allows you to create storage volumes and we can attached it to them EC2 instance. Suppose we required extra storage at that time we can create storage
+     volume and we can attach.
 
 15. Purpose of Using EBS volumes ?
-Ans:
-     EBS volumes provides additional storage option whenever we required more storage at that time we can create EBS volume and attache it to instance.
+Ans: EBS volumes provides additional storage option whenever we required more storage at that time we can create EBS volume and attache it to instance.
 
 16. How many types of purchasing options do we have in aws ec2 ?
-Ans:
-     Amazon EC2 provides the following purchasing options to enable you to optimise your 
+Ans: Amazon EC2 provides the following purchasing options to enable you to optimise your 
        costs based on your needs:
        1. On-Demand Instances – Pay, by the second, for the instances that you launch.
        2. Savings Plans – Reduce your Amazon EC2 costs by making a commitment to a consistent amount of usage, in USD per hour, for a term of 1 or 3 years.
@@ -107,18 +96,23 @@ Ans:
        6. Dedicated Instances – Pay, by the hour, for instances that run on single-tenant hardware.
        7. Capacity Reservations – Reserve capacity for your EC2 instances in a specific Availability Zone for any duration.
 
-
 17. Difference between AWS AMI Image & AWS Template ?
+Ans: AWS Image:
+     1. we are creating AMI images from instance. In this software is copied.
+     2. AMI images are used to creating instance, we just need to select storage.
+     3. This is used in organization where we need to create same cofiguration server daily.
+    AWS Template:
+     1. we can create one template in that we need to mention configuration information like instance type, key pair, ID of AMI, security group.
+     2. And from template we can can create instance.
 
 18. What is NIC & it’s types ?
-Ans: 
-     NIC is a network interface card .
-     NIC is attached to an EC2 instance in a virtual private cloud(VPC).
-     They are used to enable network connectivity for your instances on your network.
+Ans: 1. NIC is a network interface card .
+     2. NIC is attached to an EC2 instance in a virtual private cloud(VPC).
+     3. They are used to enable network connectivity for your instances on your network.
 
 19. What is elastic IP ? & WHY were we used ?
-Ans: elastic ip is a static ip address which is not changing whenever we restart our instance.we are using elastic ip because it is very difficult
-     when we restart instance ip is changing that’s why we are attaching elastic ip to instance. So whenever we restart our server ip will not change. We can create 5 elastic ip.
+Ans: 1. elastic ip is a static ip address which is not changing whenever we restart our instance.we are using elastic ip because it is very difficult
+     2. when we restart instance ip is changing that’s why we are attaching elastic ip to instance. So whenever we restart our server ip will not change. We can create 5 elastic ip.
 
 20. What is the snapshot of why we use it ?
 Ans: we are using snapshot for backup purpose, we can take snapshot of server or we can schedule task for snapshot.
@@ -132,52 +126,45 @@ Ans: when we configure the lifecycle manager in snapshot, it will take automatic
 23. How does the Amazon lifecycle manager work ?
           
 24. Difference between Security Group & NACL ?
-Ans:  
-    1. NACL operates at the subnet level and controls traffic in and out of a vpc.
-    2. Security groups operate at the instance level and controls traffic to and from individual EC2 instances.
-    3. ACLs apply to all instances in a subnet while security group apply to individual instances.
+Ans: 1. NACL operates at the subnet level and controls traffic in and out of a vpc.
+     2. Security groups operate at the instance level and controls traffic to and from individual EC2 instances.
+     3. ACLs apply to all instances in a subnet while security group apply to individual instances.
 
 25. What are NACL & Its types ?(https://www.javatpoint.com/aws-nacl)
-Ans:
-    A network ACL is an optional layer of security that acts as a firewall for controlling traffic in and out of a subnet. 
-    NACL stands for network access control list.
-    Your custom VPC automatically comes with the default Network ACL which includes all inbound and outbound ipv4 traffic.
+Ans: 1. A network ACL is an optional layer of security that acts as a firewall for controlling traffic in and out of a subnet. 
+     2. NACL stands for network access control list.
+     3. Your custom VPC automatically comes with the default Network ACL which includes all inbound and outbound ipv4 traffic.
 Two types:
     a) Custom Network ACL:Custom Network ACL is a user-defined Network ACL, and by default, it denies all the inbound and outboud traffic until you add rules.
     b) Default network ACL:  The default Network ACL allows all the traffic to flow in or out of the subnet which is associated with it.
-
 
 26. How many IP Addresses can we attach to the instances ?
 Ans: we can attach 5 elastic ip to instance.
 
 27. How many types of volume states do we have ?
 28. What is a key pair, and its types ?
-Ans:
-A key pair is a combination of a public key that is used to encrypt data and a private key that is used to decrypt data. 
-Types : public and private key.
+Ans: A key pair is a combination of a public key that is used to encrypt data and a private key that is used to decrypt data. 
+     Types : public and private key.
 
 29. What is load balancer and its types ?
-Ans:
-Load balancer: The load balancer distributes incoming application traffic across multiple targets(server), such as EC2 instances, in multiple Availability Zones.
+Ans: Load balancer: The load balancer distributes incoming application traffic across multiple targets(server), such as EC2 instances, in multiple Availability Zones.
 
-Types:  
-1. Classic load balancer
-2. Application load balancer
-3. Network load balancer
-4. Gateway load balancer
+     Types:  
+     1. Classic load balancer
+     2. Application load balancer
+     3. Network load balancer
+     4. Gateway load balancer
 
 30. How does the load balancer work in the backend? Can you explain it ?
-Ans:
-Classic load balancer checks the health of each registered target and routes traffic only to the health targets.
-Suppose one website is hosted and users are hitting that website url so classic load balancer distributes traffic among three servers using a round robin algorithm. 
-It checks the health of the server . If any server is healthy then it routes traffic to the next server.
+Ans: 1. Classic load balancer checks the health of each registered target and routes traffic only to the health targets.
+     2. Suppose one website is hosted and users are hitting that website url so classic load balancer distributes traffic among three servers using a round robin algorithm. 
+     3. It checks the health of the server . If any server is healthy then it routes traffic to the next server.
 
 31. Features of Load Balancers ?
-Ans: 
- 1. High availability
- 2. Load balancing algorithm
- 3. Route traffic only to healthy targets.
- 4. Fixed Response
+Ans: 1. High availability
+     2. Load balancing algorithm
+     3. Route traffic only to healthy targets.
+     4. Fixed Response
 
 32. What is ASG ? & Its types ?
 Ans: Aws autoscaling monitor your server, and if load comes then it scale up servers and when load decrease it scale downs.
@@ -188,9 +175,8 @@ b) Horizontal autoscaling(used in production):
    Horizontal scaling means that you scale by adding more ec2 machines into your pool of resources.(replica is creating of server).
 
 33. What is a Health Check ?
-Ans:
-Health checks are a way of asking a service on a particular server whether or not it is capable of performing work successfully. 
-Load balancers ask each server this question periodically to determine which servers it is safe to direct traffic to.
+Ans: Health checks are a way of asking a service on a particular server whether or not it is capable of performing work successfully. 
+     Load balancers ask each server this question periodically to determine which servers it is safe to direct traffic to.
 
 34. What is the threshold ?
 35. What is the group of LB ?
