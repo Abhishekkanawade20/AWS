@@ -94,7 +94,12 @@ Ans: S3 -> Bucket -> permission -> Block public access-> enable
 
 15.How can we give public access to our bucket ?
 16.Aws pricing factor of the S3 Service.
+Ans: 1. You pay for objects in your buckets.
+     2. The rate you charged depends on your object size, how long you stored the objects.
+     3. Also depends on which storage class you used for store your objects.
+
 17.How can we make our object public ?
+Ans: S3 -> Bucket -> Bucket_name -> select object -> Actions -> make object public.
 19.How can we configure the static website logs in s3 ?
 
 20.What is CORS ?
@@ -109,5 +114,5 @@ Ans: 1. Path = S3 → bucket → Management → Inventory rule
 22.What does it mean by Requester pays ?
 ANS: Generally bucket owner pays for storage of data in s3, but if requester is requesting access for the data, then he needs to pay instead of bucket owner.
 
-23.What is the secondary word to Transfer acceleration ?, why we need to use this transfer acceleration ?
+23. What is the secondary word to Transfer acceleration ? why we need to use this transfer acceleration ?
 
