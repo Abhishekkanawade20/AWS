@@ -43,6 +43,19 @@ Ans:
 8.Why is MFA Delete important in S3 Bucket object level ?
 9.What is S3 Multipart upload ?
 10.What are the storage classes in Amazon S3 ?   —------------------- IMP
+Ans:
+    1. Amazon S3 Standard(30 days): > It is used for general purpose. Here data is frequnetly accessed.
+    2. Amazon S3 Intelligent-Tiering: > It moves data automatically to the most effective stoareg class
+                                      > It automatically decrases the users storage cost.
+    
+    3. Amazon S3 Standard-Infrequent Access(60 Days): > To access less frequently user data, user used standard Infrequent Access.
+                                                      > Also it provide rapid access when it required.
+                                                      > S3 IA moves objects that have not been accessed in 30 consecutive Days.
+    4. Amazon S3 One Zone-Infrequent Access(60 Days): >
+Amazon S3 Glacier Instant Retrieval
+Amazon S3 Glacier Flexible Retrieval
+Amazon S3 Glacier Deep Archive
+
 11.What is ACL ?
 12.Why do we need ACL ?
 13.What is a Life cycle policy ? Why do we need to use the life cycle rule ?
