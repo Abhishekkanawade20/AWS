@@ -1,0 +1,15 @@
+1. What is a cloud trail ?
+Ans: 1. You can use cloudtrail for monitor activities of aws account. You can identify who and what take action in aws account.
+
+2. Why do we use trails, what is the exact purpose of enabling the trail in cloud production accounts ?
+Ans: For ongoing event you can create trail. You can create a trail and you can monitor activities.
+
+3. Explain how we can create a trail in aws cloud trail ?
+Ans: 
+How can we enable logging for S3 bucket using cloud trails ?
+How do you get the list of all created trailers in your production account ?
+Can we create a trail for a multi region, if yes then how can we configure it ?
+How can we disable the logging for certain events, services in cloud trail, If yes so explain how ?
+Real time use case of cloud trail ?
+What is cloud trail event history ?
+What is log file integrity validation in cloud trail ?
