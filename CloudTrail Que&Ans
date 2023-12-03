@@ -5,11 +5,21 @@ Ans: 1. You can use cloudtrail for monitor activities of aws account. You can id
 Ans: For ongoing event you can create trail. You can create a trail and you can monitor activities.
 
 3. Explain how we can create a trail in aws cloud trail ?
-Ans: 
-How can we enable logging for S3 bucket using cloud trails ?
+Ans: CloudTrail -> Trail -> Create trail -> storage location select bucket -> SSE-KMS select enable -> additional setting you can enable SNS for notification.
+
+4. How can we enable logging for S3 bucket using cloud trails ?
 How do you get the list of all created trailers in your production account ?
 Can we create a trail for a multi region, if yes then how can we configure it ?
 How can we disable the logging for certain events, services in cloud trail, If yes so explain how ?
-Real time use case of cloud trail ?
-What is cloud trail event history ?
-What is log file integrity validation in cloud trail ?
+8. Real time use case of cloud trail ?
+Ans: 1. Identity and access management(IAM) activities.
+     2. Security monitoring
+     3. Monitoring and alearting.
+     4. Resource change such as EC2 instance.
+
+9. What is cloud trail event history ?
+Ans: CloudTrail is enabled by default for your AWS account and you have access for CloudTrail Event history. The Event history provides a viewable, searchable,
+     downloadable record of the past 90 days of management events in an AWS Region.
+
+10. What is log file integrity validation in cloud trail ?
+Ans: Log file integrity validation process tell us if log file has been deleted or changed or inform us that no log file were delivered to your account.
