@@ -208,5 +208,6 @@ Ans: a) AWS AMI Image:
      2. AMI images are used to creating instance, we just need to select storage.
      3. This is used in organization where we need to create same cofiguration server daily.
 
-      b) Snapshot: we are using snapshot for backup purpose, we can take snapshot of server or we can schedule task for snapshot.
+    b) Snapshot:
+     1. we are using snapshot for backup purpose, we can take snapshot of server or we can schedule task for snapshot.
                   
