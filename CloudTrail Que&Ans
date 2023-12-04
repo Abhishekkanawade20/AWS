@@ -8,9 +8,9 @@ Ans: For ongoing event you can create trail. You can create a trail and you can 
 Ans: CloudTrail -> Trail -> Create trail -> storage location select bucket -> SSE-KMS select enable -> additional setting you can enable SNS for notification.
 
 4. How can we enable logging for S3 bucket using cloud trails ?
-How do you get the list of all created trailers in your production account ?
-Can we create a trail for a multi region, if yes then how can we configure it ?
-How can we disable the logging for certain events, services in cloud trail, If yes so explain how ?
+5. How do you get the list of all created trailers in your production account ?
+6. Can we create a trail for a multi region, if yes then how can we configure it ?
+7. How can we disable the logging for certain events, services in cloud trail, If yes so explain how ?
 8. Real time use case of cloud trail ?
 Ans: 1. Identity and access management(IAM) activities.
      2. Security monitoring
