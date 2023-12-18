@@ -1,0 +1,79 @@
+======================================================================================
+2-tire architecture - java app on tomcat
+			--RDS database in backend
+=====================================================================================
+
+tomcat installation
+---------------------
+yum install java-openjdk -y -y
+curl -O https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.88/bin/apache-tomcat-8.5.88.tar.gz
+tar -xzvf apache-tomcat-8.5.88.tar.gz -C /opt
+cd /opt/apache-tomcat-8.5.88/webapps
+curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war
+cd ..
+cd /opt/apache-tomcat-8.5.88/lib
+curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
+cd bin
+./catalina.sh start
+cd ..
+cd /opt/apache-tomcat-8.5.88/conf
+vim context.xml
+add the following content in this file
+
+<Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
+           maxTotal="500" maxIdle="30" maxWaitMillis="1000"
+           username="mydblogin" password="mydbpassword" driverClassName="com.mysql.jdbc.Driver"
+           url="jdbc:mysql://RDS database endpoint:3306/mysql database name?useUnicode=yes&amp;characterEncoding=utf8"/>
+-------------------------------------------------------------------------------------------------
+
+mysql installation
+------------------
+
+yum install mysql -y
+
+mysql -h (RDS database endpoint) -u (RDS database user) -p(RDS database user password)
+show databases;
+create database studentapp;
+use studentapp;
+CREATE TABLE if not exists students(student_id INT NOT NULL AUTO_INCREMENT,
+	student_name VARCHAR(100) NOT NULL,
+    student_addr VARCHAR(100) NOT NULL,
+	student_age VARCHAR(3) NOT NULL,
+	student_qual VARCHAR(20) NOT NULL,
+	student_percent VARCHAR(10) NOT NULL,
+	student_year_passed VARCHAR(10) NOT NULL,
+	PRIMARY KEY (student_id)
+);
+
+Check-
+
+show tables;
+select * from students;
+describe student;
+
+exit:
+ ./catalina.sh stop
+
+yum can see all content of the tables.
+---------------------------------------------------------------------------
+Hit the instance IP with port and application name
+IP/8080/student
+put data in the application
+you can find all your added data is in table form.
+
+mysql -h (RDS database endpoint) -u (RDS database user) -p(RDS database user password)
+show databases;
+create database studentapp;
+use studentapp;
+show tables;
+select * from students;
+
+all added data in website is added in database.
+
+--------------------------------------------------------
+for any issue if you are faceing then 
+
+check logs in 
+cat ./log/catalina.out
+
+=======================================================================
