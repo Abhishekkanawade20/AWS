@@ -1,6 +1,8 @@
 1. What is cloud computing ?
 Ans: Cloud computing is delivery of various services data storage, servers, databases, softwares and networking using internet. Instead of buying, owning and maintaning physical data 
      centers and servers you can access various kind of services via internet.
+     scalabilty - it means when load comes to server, servers will scale up(increase) and when load decrases server's will scale down.
+     elastticity - elasticity means when loads comes then we can increase the size of memory or ram, we can create a volume and attach it,also when loads decreases we can detach.
 
 2. Deployment Model in Cloud ?
 Ans: four types:
@@ -26,8 +28,8 @@ Ans: > Regions - 32
      > edge caches - 13 
 
 5. Why do we use region ?
-Ans: we are using regions because of scalabilty and reliability also cost effect matters.
-
+Ans: we are using regions because of scalabilty, availabilty, reliability also cost effect matters.
+     
 6. What is service ? & What are resources ?
 Ans: 1. service -> Basically EC2, IAM, S3, VPC, EFS This are services
      2. Resources are comes under services like create user, create role, create bucket 
