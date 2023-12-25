@@ -60,7 +60,7 @@ Ans: 1. Multipart upload allows you to upload large a object as set of smaller o
 10.What are the storage classes in Amazon S3 ?   —------------------- IMP
 Ans:
     1. Amazon S3 Standard(30 days): > It is used for general purpose. Here data is frequnetly accessed.
-    2. Amazon S3 Intelligent-Tiering: > It moves data automatically to the most effective stoareg class
+    2. Amazon S3 Intelligent-Tiering: > It moves data automatically to the most effective storage class
                                       > It automatically decrases the users storage cost.
     
     3. Amazon S3 Standard-Infrequent Access(60 Days): > To access less frequently user data, user used standard Infrequent Access.
