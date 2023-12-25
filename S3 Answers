@@ -89,6 +89,7 @@ Ans: 1. Each bucket and objects has ACL attached to it as a subresource.
 13.What is a Life cycle policy ? Why do we need to use the life cycle rule ?
 Ans: 1. lifecycle policy consists of one or more rules that determines which images in a repository should be expired.
      2. lifecycle rule used to manage your objects, so that they are stored cost effectively throughout their lifecycle.
+     3. Lifecycle rule is used to transfer objects in another storage class, archieve them and delete them automactically. so we can create lifecycle rule and attach.
 
 14.How can we make our bucket public ?
 Ans: S3 -> Bucket -> permission -> Block public access-> enable
