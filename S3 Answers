@@ -119,4 +119,9 @@ ANS: > Generally bucket owner pays for storage of data in s3, but if requester i
        instead of bucket owner pays, requester is paying.
 
 23. What is the secondary word to Transfer acceleration ? why we need to use this transfer acceleration ?
+Ans: 1. Amazon transfer location is effective for minimizing or eliminating latenecy which is caused by geogrphical location between globally distributed clients and regional 
+        application.
+     2. Transfer Acceleration uses the globally distributed edge locations in CloudFront for data transport.
+     3. The AWS edge network has points of presence in more than 50 locations.
+     4. so caches are stored at this edge locations and we are able access DNS rapidly.
 
