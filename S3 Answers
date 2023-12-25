@@ -114,7 +114,9 @@ Ans: 1. Path = S3 → bucket → Management → Inventory rule
      4. You can create an inventory for collecting the metadata of your nodes.
 
 22.What does it mean by Requester pays ?
-ANS: Generally bucket owner pays for storage of data in s3, but if requester is requesting access for the data, then he needs to pay instead of bucket owner.
+ANS: > Generally bucket owner pays for storage of data in s3, but if requester is requesting access for the data, then he needs to pay instead of bucket owner.
+     > Basically bucket owner pays for data which is stored in bucket, we can create bucket as a requeste pays, so whenver requester is accessing data of that bucket.
+       instead of bucket owner pays, requester is paying.
 
 23. What is the secondary word to Transfer acceleration ? why we need to use this transfer acceleration ?
 
