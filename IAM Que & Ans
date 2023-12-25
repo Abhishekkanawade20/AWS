@@ -92,3 +92,8 @@ Ans: Three types:
 
 21. What are Tags ?
 Ans: Tags are used for identity purpose.
+
+22. What is the use of public and private key type?
+Ans: 1. A key pair is a combination of public and private key. public key is used to encrypt data and private is used to decrypt data.
+     2. Also key pairs are used for prove your identity when you are going take ssh of your EC2 instance. server has public key and user has private key. 
+     3. You can have up to 5,000 key pairs per Region.
