@@ -97,3 +97,9 @@ Ans: Tags are used for identity purpose.
 Ans: 1. A key pair is a combination of public and private key. public key is used to encrypt data and private is used to decrypt data.
      2. Also key pairs are used for prove your identity when you are going take ssh of your EC2 instance. server has public key and user has private key. 
      3. You can have up to 5,000 key pairs per Region.
+
+23. What is the access key? use of access key? and meaning of access keys?
+Ans: 1. Access keys are user for request to programmatic access control. we can use aws from command line interface by providing access keys.
+     2. Access key is 20 alphaneumeric digit and secret access is 40 digit.
+     3. Access key work as user id and secret access key used as password.
+
