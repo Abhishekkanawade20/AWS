@@ -1,0 +1,17 @@
+Que 1: What is amazon elastic beanstalk service?
+Ans: 1. elastic beanstalk service is used for application deployement and rolling deployement(we can update the versions).
+     2. elastic beanstalk service is PAAS service. In this service you just need to define your requirement, it will automatically create a environment for application deployement and
+        after application deployement you can create a versions and you can update the versions.
+     3. It configures automatically various amazon services like EC2 insatance creation, auto scaling, SNS, load balancer, cloudwatch and etc.
+     4. This service manages application deployement, upload version, launch environment, manage environment.
+
+Que 2: which are the elastic beanstalk deployement strategies?
+Ans: 1. All-at-once - It deployes the application on all instances.
+     2. Rolling - IT Splits the instances into batches and deploys to one batch at a time.(like suppose we have 6 instances then it will create 2 batches of 3 instance and deploye
+                                                                                            application on one by one batch)
+     3. Rolling with additional batch - It Splits the deployments into batches but for the first batch creates new EC2 instances instead of deploying on the existing EC2 instances.(so
+                                        if we have two batches of 3 instance, so it will create a replica of first batch and deploy application in the first batch, it will not deploy
+                                        application in existing instance)
+     4. Immutable - If you need to deploy with a new instance instead of using an existing instance.(so it will create a new instance and will deploy a application in new instance)
+     5. Traffic splitting - Performs immutable deployment and then forwards percentage of traffic to the new instances for a pre-determined duration of time. 
+                            If the instances stay healthy, then forward all traffic to new instances and shut down old instances.
