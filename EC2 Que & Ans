@@ -210,4 +210,15 @@ Ans: a) AWS AMI Image:
 
     b) Snapshot:
      1. we are using snapshot for backup purpose, we can take snapshot of server or we can schedule task for snapshot.
+
+45. EC2 instance quotes?
+Ans: 1. On-Demand instance : > In spot instance you pay for compute capacity by the second with no long-term commitments.
+                             > You have full control over the instance's lifecycle—you decide when to launch, stop, hibernate, start, reboot, or terminate it.
+
+     2. Spot instance : > spot instance unable you to request unused instance, it uses spare ec2 instance capacity. The price of ec2 instance is lesser that on- demand instance
+                        > Your Spot Instance runs whenever capacity is available.
+
+     3. Reserved instances: > You can purchase a Reserved Instance for a one-year or three-year commitment.
+
+     4. Dedicated instance: > dedicated instance are dedicated to single customer.A Dedicated Host is also a physical server that's dedicated for your use.
                   
