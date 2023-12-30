@@ -228,4 +228,9 @@ Ans: When loads comes on server, autoscaling policy creates the server automacti
                2. Fault tolerance - It terminates the unhealthy instance and creates the new one.
                3. Cost management - It saves the cost by creating instance when it needs when loads come on server and it terminate the instance when load decreases.
 
-    steps: 
+    steps: > Create one template(select software configuration and AMI image)
+           > Go to auto scaling and configure setting 
+           > Create Target tracking scaling policy in this select cpu utilization metrics......so whenver it cross the cpu utlization limit then instance will auto create.
+           > Also define desired, maximum and minimum capcity
+           > After saving all configuration, instance will create, Now take SSH of instance and apply stress on instance and when is cross the desired value servers will scale uo
+             and when load decreses it will scale down instance to its original state.
