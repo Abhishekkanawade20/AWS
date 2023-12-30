@@ -221,4 +221,11 @@ Ans: 1. On-Demand instance : > In spot instance you pay for compute capacity by 
      3. Reserved instances: > You can purchase a Reserved Instance for a one-year or three-year commitment.
 
      4. Dedicated instance: > dedicated instance are dedicated to single customer.A Dedicated Host is also a physical server that's dedicated for your use.
-                  
+
+46. What is Autoscaling and steps of autoscaling?
+Ans: When loads comes on server, autoscaling policy creates the server automactically and when load decrease it scale downs the servers.
+     benefits: 1. High availability - It provides the high availablity, autoscaling checks the health of instances and routes the traffic only to healthy instance.
+               2. Fault tolerance - It terminates the unhealthy instance and creates the new one.
+               3. Cost management - It saves the cost by creating instance when it needs when loads come on server and it terminate the instance when load decreases.
+
+    steps: 
