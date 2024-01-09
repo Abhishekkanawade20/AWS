@@ -1,1 +1,7 @@
 1. what is amazon cloudfront and use?
+Ans: 1. Cloudfront is a web service which speeds up your distribution of static and dynamic content such html, css, images files to your users. 
+     2. Cloudfront reduces the latency for accessing wesites. Cloudfront helps for storing caches of data at edge locations which are distributed globally and whenver user accessing
+        that particular website then he is able to access website fastly without any latency.
+     3. If the content is already in the edge location with the lowest latency, CloudFront delivers it immediately.
+     4. If the content is not in that edge location, CloudFront retrieves it from an origin that you've defined—such as an Amazon S3 bucket, a MediaPackage channel,
+        or an HTTP server (for example, a web server) that you have identified as the source for the definitive version of your content.
