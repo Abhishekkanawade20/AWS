@@ -1,5 +1,7 @@
 1. What is a cloud trail ?
 Ans: 1. You can use cloudtrail for monitor activities of aws account. You can identify who and what take action in aws account.
+     2. when you create a trail then activities stores in s3 .
+     3. You can monitor events activities using cloudtrail.
 
 2. Why do we use trails, what is the exact purpose of enabling the trail in cloud production accounts ?
 Ans: For ongoing event you can create trail. You can create a trail and you can monitor activities.
@@ -23,3 +25,8 @@ Ans: CloudTrail is enabled by default for your AWS account and you have access f
 
 10. What is log file integrity validation in cloud trail ?
 Ans: Log file integrity validation process tell us if log file has been deleted or changed or inform us that no log file were delivered to your account.
+
+11. What are the benefits ?
+Ans: 1. Visibility into user and resource activity : You can identify which users, roles, and accounts called AWS, the source IP address of calls, and when the calls occurred. 
+                                                  You can also use AWS CloudTrail Insights to detect unusual activity in your account.
+     2. 
