@@ -106,6 +106,7 @@ Ans: S3 -> Bucket -> Bucket_name -> select object -> Actions -> make object publ
 
 20.What is CORS ?
 Ans: CORS stands for cross-origin resource sharing.It is the one of resource of s3.
+     The CORS configuration, written in JSON, defines a way for client web applications that are loaded in one domain to interact with resources in a different domain
 
 21.What is S3 Inventory ?
 Ans: 1. Path = S3 → bucket → Management → Inventory rule
