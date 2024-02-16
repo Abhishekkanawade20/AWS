@@ -554,7 +554,8 @@ Ans: When loads comes on server, autoscaling policy creates the server automacti
 
 =================================================================================================================================================================================
 
-What is KMS ?
+1. What is KMS ?
+Ans: 
 AWS Amazon EC2 Instance types ?
 How many types of status checks happen in aws ?
 When we see the global view option in ec2 service ?
