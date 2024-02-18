@@ -104,7 +104,8 @@ Ans: 1. A key pair is a combination of public and private key. public key is use
 Ans: 1. Access keys are user for request to programmatic access control. we can use aws from command line interface by providing access keys.
      2. Access key is 20 alphaneumeric digit and secret access is 40 digit.
      3. Access key work as user id and secret access key used as password.
-=====================================================================================================================================================
+=====================================================================================================================================================================================
+=====================================================================================================================================================================================
 S3 :
 
 1. Difference between Block storage & Object Storage ?
@@ -236,7 +237,8 @@ Ans: 1. Amazon transfer location is effective for minimizing or eliminating late
      4. so caches are stored at this edge locations and we are able access DNS rapidly.
 
 
-============================================================================================================================================================================
+======================================================================================================================================================================================
+=================================================================================================================================================================================
 
 1. What is a cloud trail ?
 Ans: 1. You can use cloudtrail for monitor activities of aws account. You can identify who and what take action in aws account.
@@ -270,7 +272,8 @@ Ans: Log file integrity validation process tell us if log file has been deleted 
 Ans: 1. Visibility into user and resource activity : You can identify which users, roles, and accounts called AWS, the source IP address of calls, and when the calls occurred. 
                                                   You can also use AWS CloudTrail Insights to detect unusual activity in your account.
      2. 
-=================================================================================================================================
+=====================================================================================================================================================================================
+=====================================================================================================================================================================================
 SNS=
 
 1. What is SNS ?
@@ -313,7 +316,9 @@ Ans: with amazon sns, you have the ability to send push notification messages to
 
 11. On which delivery method do we use and configure the subscription ?
 
-=======================================================================================================================
+==============================================================================================================================================================================
+==============================================================================================================================================================================
+EC2
 
 
   1. What is EC2, Why do we need EC2 service in cloud computing ?
@@ -357,8 +362,11 @@ Ans: when we hibernate instance, hibernation saves the content from the instance
      And when we start our instance stored content will restored. RAM content reload, the processes that are previously running that will also resumes.
 
 9. What is KMS ?
-Ans: AWS Key Management Service (AWS KMS) is a managed service that makes it easy  
+Ans: 1. AWS Key Management Service (AWS KMS) is a managed service that makes it easy  
      for you to create and control the cryptographic keys that are used to protect your data.
+     1.Amazon key management service is used to create, control and manage cryptographic keys that encrypt and protect their data.
+     2. Cryptographic keys are used to protect the data and encypt the data.
+     3. AWS KMS is one kind of service which is provided by aws for their client to encrypt their data.
 
 10. AWS Amazon EC2 Instance types ?
 Ans:
@@ -553,50 +561,20 @@ Ans: When loads comes on server, autoscaling policy creates the server automacti
              and when load decreses it will scale down instance to its original state.
 
 =================================================================================================================================================================================
-
-1. What is KMS ?
-Ans: 
-AWS Amazon EC2 Instance types ?
-How many types of status checks happen in aws ?
-When we see the global view option in ec2 service ?
-When we logged into the cloud account by default why do we always jump into the north virginia region, why it’s most popular ?
-What are EBS Volumes and its types ?
-Purpose of Using EBS volumes ?
-How many types of purchasing options do we have in aws ec2 ?
-Difference between AWS AMI Image & AWS Template ?
-What is NIC & it’s types ?
-What is elastic IP ? & WHY were we used ?
-What is the snapshot of why we use it ?
-How can we save money in snapshot costing, if an automated snapshot has been created ?
-What is the lifecycle manager in snapshot ?
-How does the Amazon lifecycle manager work ?
-Difference between Security Group & NACL ?
-What are NACL & Its types ?
-How many IP Addresses can we attach to the instances ?
-How many types of volume states do we have ?
-What is a key pair, and its types ?
-What is load balancer and its types ?
-How does the load balancer work in the backend? Can you explain it ?
-Features of Load Balancers ?
-What is ASG ? & Its types ?
-What is a Health Check ?
-What is the threshold ?
-What is the group of LB ?
-Why do we prefer ALB over ALB ?
-Difference between Web server & Application server ?
-What is the target group ?
-What is the desired capacity in ASG ?
-How many types of the Scaling option ?
-Scaling plans ?
-Types Auto scaling
-Difference between vertical scaling and horizontal scaling ?
-Difference between AMI & Snapshot ?
-What is difference between EBS/EFS/S3
+=================================================================================================================================================================================
 
 AWS VPC:-
-What is VPC ?
-What are the Subnets when working with VPC ?
-What is NAT Device ?
+
+1. What is VPC ?
+Ans:1. VPC stands for virtual private cloud.
+    2. VPC is used to create virtual private cloud, here we can create our own network and we can manage traffic .
+    3. we can create subnet within vpc network.
+
+2. What are the Subnets when working with VPC ?
+Ans: subnets are the range of ipaddresses within a network which are reserved so that they are not available to everyone within network. we can create a multiple subnets
+     
+3. What is NAT Device ?
+Ans:
 What is the difference between stateful & stateless filtering ?
 What are the advantages of using default VPC ?
 What is the internet gateway in VPC ?
