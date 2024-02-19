@@ -572,13 +572,35 @@ Ans:1. VPC stands for virtual private cloud.
 
 2. What are the Subnets when working with VPC ?
 Ans: subnets are the range of ipaddresses within a network which are reserved so that they are not available to everyone within network. we can create a multiple subnets
-     
+
 3. What is NAT Device ?
-Ans:
-What is the difference between stateful & stateless filtering ?
-What are the advantages of using default VPC ?
-What is the internet gateway in VPC ?
-What is Network ACL in VPC ?
+Ans: NAT stands for network address translation. we are attaching nat to private addresses for accessing internet. we can attach nat to multiple private subnets.
+
+4. What is the difference between stateful & stateless filtering ?
+Ans: network firewall rule groups works on stateful and stateless
+    stateful:
+     1. Stateful network traffic handling is the default behavior of security groups in AWS VPC.
+     2. A stateful group security group allows inbound traffic for a specific rule and automatically allows the corresponding outboud traffic, regardless of whether
+        an explicit outbound rule is defined.
+     3. In ul you only need to configure inbound traffic no need to define outbound traffic.
+
+   stateless: 
+     1. With stateless network ACLs, you need to define both inbound and outbound rules to control the flow of traffic accurately.
+     2. Each rule in a stateless network ACL controls either inbound or outbound traffic, and there is no automatic allowance of return traffic like in stateful security groups.
+
+ 
+5. What are the advantages of using default VPC ?
+Ans: When you launch resources in a default VPC, you can benefit from the advanced networking functionalities of Amazon VPC.
+
+6. What is the internet gateway in VPC ?
+Ans: 1.A internet gateway is horizontally scaled, and highly available vpc component that allows communication between youe vpc and the internet.
+     2.Internet Gateway enables resources (like EC2 instances) in public subnets to connect to the internet.
+     3. Internet Gateway supports IPv4 and IPv6 traffic.     
+     4. Internet Gateway is not Availability Zone specific.
+     5. There’s no additional charge for having an internet gateway in your account.
+
+7. What is Network ACL in VPC ?
+Ans: 
 What is the Security Group in VPC ?
 What is an Elastic IP Address in VPC, and why do we need to use, realtime example ?
 Can we attach one Production Elastic IP to the new Prod server ?
