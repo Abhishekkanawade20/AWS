@@ -41,6 +41,10 @@ Ans: 1. User
      2. user groups
      3. roles
      4. policies
+
+Inline policy - when we are creating any policy and attaching it user and when user is deleted at that time policy also deleted is called inline policy
+
+Custom managed policy - when the policy is not deleted even after the user deletion is called custom managed policy .
     
 8. Deployment model in IAM ?
 Ans: Three deployement models in IAM:
