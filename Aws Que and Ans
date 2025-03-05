@@ -80,7 +80,7 @@ Ans: Resource based policy are attach to resource.
 Ans: Yes, we can create via json code.
 
 17. If one user has created it by default, which permission has been assigned to that user ?
-Ans: If user has created by deault then user dont have any kind of permission also user does not have credential.
+Ans: If user has created by deault then user dont have any kind of permission also user does not have credential, having password change permission.
 
 18. What is dominator policy ?
 Ans: Dominator Policies IAM user have Admin Access (full access, all permission )
