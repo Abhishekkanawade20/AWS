@@ -1,0 +1,8 @@
+Aws Services:
+1. Auth : IAM & KMS
+KMS : KMS is key management service used to manage the keys
+
+storage services: Artifact, S3
+
+AWS Artifact: 
+- After the code build to store code aws having CodeArtifact service.
